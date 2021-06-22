@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express/static('./dist/angular4now'));
+app.use(express.static('./dist/angular4now'));
 
 app.get('/*', (req, res) => {
     res.sendFile('index.html', {root: 'dist/angular4now'})
